@@ -20,9 +20,13 @@ int main(void)
 
     for(;;)  //main loop - read "forever", or you may use 'while(1)'
     {
-          GPIOC->BSRR = GPIO_BSRR_BS13; 
-          delay(5000000);
-          GPIOC->BSRR = GPIO_BSRR_BR13; 
-          delay(5000000); 
+			GPIOC->BSRR = GPIO_BSRR_BS13; 
+      delay(3000000);
+      GPIOC->BSRR = GPIO_BSRR_BR13; 
+      delay(3000000); 
     }    
 }
+//Можно сбросить или установить сразу несколько битов одним обращением к регистру BSRR. 
+//Это будет выглядеть так.
+
+//GPIOB -> BSRR = GPIO_BSRR_BS10 | GPIO_BSRR_BS15 | GPIO_BSRR_BR11 | GPIO_BSRR_BR12; // установить биты 10 и 15, сбросить биты 11 и 12
