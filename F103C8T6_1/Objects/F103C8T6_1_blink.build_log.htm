@@ -31,13 +31,13 @@ user/main.c(3): warning: In file included from...
 ./user/main.h(5): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
-user/main.c(32): warning: no newline at end of file [-Wnewline-eof]
+user/main.c(62): warning: no newline at end of file [-Wnewline-eof]
 //GPIOB -> BSRR = GPIO_BSRR_BS10 | GPIO_BSRR_BS15 | GPIO_BSRR_BR11 | GPIO_BSRR_BR12; // <F3><F1><F2><E0><ED><EE><E2><E8><F2><FC> <E1><E8><F2><FB> 10 <E8> 15, <F1><E1><F0><EE><F1><E8><F2><FC> <E1><E8><F2><FB> 11 <E8> 12
                                                                                                                                                                                                                           ^
 2 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=1158 RO-data=286 RW-data=4 ZI-data=1636  
+Program Size: Code=1370 RO-data=286 RW-data=4 ZI-data=1636  
 FromELF: creating hex file...
 ".\Objects\F103C8T6_1_blink.axf" - 0 Error(s), 2 Warning(s).
 
@@ -68,15 +68,15 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:GPIO:1.3
-      Include file:  RTE_Driver\GPIO_STM32F10x.h
       Source file:   RTE_Driver\GPIO_STM32F10x.c
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_stm32f10x.c
       Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
-Build Time Elapsed:  00:00:01
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\system_stm32f10x.c
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
